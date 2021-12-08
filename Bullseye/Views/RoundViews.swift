@@ -13,12 +13,38 @@ struct RoundImageViewStroked: View {
     
     var body: some View {
         Image(systemName: systemName)
-        
+            .font(.title)
+            .foregroundColor(Color("TextColor"))
+            .frame(width: 56.0, height: 56.0)
+    }
+}
+
+struct RoundImageViewFilled: View {
+    
+    var systemName: String
+    
+    var body: some View {
+        Image(systemName: systemName)
+            .font(.title)
+            .foregroundColor(Color("TextColor"))
+            .frame(width: 56.0, height: 56.0)
+    }
+}
+
+struct PreviewView: View {
+    
+    var body: some View {
+        VStack(spacing: 10) {
+        RoundImageViewStroked(systemName: "arrow.counterclockwise")
+        RoundImageViewStroked(systemName: "list.dash")
+    }
     }
 }
 
 struct RoundViews_Previews: PreviewProvider {
     static var previews: some View {
-        RoundImageViewStroked(systemName: "arrow.counterclockwise")
+        PreviewView()
+        PreviewView()
+            .preferredColorScheme(.dark)
     }
 }
