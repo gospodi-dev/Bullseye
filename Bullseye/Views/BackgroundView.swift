@@ -42,8 +42,10 @@ struct NumberView: View {
     var text: String
     
     var body: some View {
-        Color.gray
-            .frame(width: 56, height: 100)
+        VStack(spacing: 5) {
+            LabelText(text: title.uppercased())
+            RoundRectTextView(text: text)
+        }
     }
 }
 
