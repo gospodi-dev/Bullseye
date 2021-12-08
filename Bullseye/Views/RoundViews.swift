@@ -16,6 +16,9 @@ struct RoundImageViewStroked: View {
             .font(.title)
             .foregroundColor(Color("TextColor"))
             .frame(width: 56.0, height: 56.0)
+            .overlay(
+                Circle().strokeBorder(Color("ButtonStrokeColor"), lineWidth: 2.0)
+            )
     }
 }
 
