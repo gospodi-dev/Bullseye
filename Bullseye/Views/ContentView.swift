@@ -18,7 +18,7 @@ struct ContentView: View {
             Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                InstructionText(text: "🎯🎯🎯\n put the bullseye as close as you can to")
+                InstructionText(text: "🎯🎯🎯\n Слишком большой текст для этой рамки")
                     .padding(.leading, 30.0)
                     .padding(.trailing, 30.0)
                 BigNumberText(text: String(game.target))
