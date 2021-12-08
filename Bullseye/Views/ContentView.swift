@@ -18,10 +18,7 @@ struct ContentView: View {
             Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                InstructionText(text: "🎯🎯🎯\n Слишком большой текст для этой рамки")
-                    .padding(.leading, 30.0)
-                    .padding(.trailing, 30.0)
-                BigNumberText(text: String(game.target))
+                InstructionsView(game: $game)
                 HStack {
                     Text("1")
                         .bold()
@@ -52,6 +49,20 @@ struct ContentView: View {
                         let roundedValue: Int = Int(sliderValue.rounded())
                         return Alert(title: Text("Hello, there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored   \(game.points(sliderValue: roundedValue)) points this round."),dismissButton: .default(Text("Awesome!")))
                 })
+            }
+        }
+    }
+    
+    struct InstructionsView: View {
+        @Binding var game: Game
+        
+        var body: some View {
+            VStack {
+                InstructionText(text: "🎯🎯🎯\n put the bullseye as close as you can to")
+                    .padding(.leading, 30.0)
+                    .padding(.trailing, 30.0)
+                
+                BigNumberText(text: String(game.target))
             }
         }
     }
