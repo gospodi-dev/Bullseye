@@ -11,17 +11,17 @@ struct ContentView: View {
     
     @State private var alertIsVisible = false
     @State private var sliderValue = 50.0
-    @State private var game: Game = Game()
+    @State private var game = Game()
     
     var body: some View {
         ZStack {
            BackgroundView(game: $game)
-                .edgesIgnoringSafeArea(.all)
             VStack {
                 InstructionsView(game: $game)
-                SliderView(sliderValue: $sliderValue)
+                    .padding(.bottom, 100)
                 HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
         }
+            SliderView(sliderValue: $sliderValue)
     }
 }
     
