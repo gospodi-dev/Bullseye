@@ -73,6 +73,7 @@ struct RingView: View {
             ForEach(1..<5) { ring in let size = CGFloat(ring * 100)
             Circle()
                 .stroke(lineWidth: 20.0)
+                .fill(Color("RingColor"))
                 .frame(width: size, height: size)
             }
         }
