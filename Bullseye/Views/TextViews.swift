@@ -56,6 +56,22 @@ struct LabelText: View {
     }
 }
 
+struct BodyText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+    }
+}
+
+struct ButtonText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+    }
+}
+
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
@@ -64,6 +80,8 @@ struct TextViews_Previews: PreviewProvider {
             BigNumberText(text: "999")
             SliderLabelText(text: "99")
             LabelText(text: "9")
+            BodyText(text: "You score 200 Points\n🎉🎉🎉")
+            ButtonText(text: "Start New Round")
         }
     }
 }
