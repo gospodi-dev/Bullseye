@@ -17,6 +17,7 @@
 		CC8B81A9275DFE920028651C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8B81A8275DFE920028651C /* Assets.xcassets */; };
 		CC8B81AC275DFE920028651C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8B81AB275DFE920028651C /* Preview Assets.xcassets */; };
 		CC8D507F275FCAAB0029CED9 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D507E275FCAAB0029CED9 /* TextViews.swift */; };
+		CCDF717427624611004A5A51 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDF717327624611004A5A51 /* PointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		CC8B81A8275DFE920028651C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC8B81AB275DFE920028651C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC8D507E275FCAAB0029CED9 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		CCDF717327624611004A5A51 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				CC32ED0A2760E31A00EB910B /* Shapes.swift */,
 				CC705A992760F2A800FBC9FD /* RoundViews.swift */,
 				CC705A9B2761019400FBC9FD /* BackgroundView.swift */,
+				CCDF717327624611004A5A51 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				CC8B81A7275DFE910028651C /* ContentView.swift in Sources */,
 				CC8D507F275FCAAB0029CED9 /* TextViews.swift in Sources */,
 				CC32ED0B2760E31A00EB910B /* Shapes.swift in Sources */,
+				CCDF717427624611004A5A51 /* PointsView.swift in Sources */,
 				CC705A9C2761019400FBC9FD /* BackgroundView.swift in Sources */,
 				CC00EF5C275E4D0E005BDD79 /* Game.swift in Sources */,
 				CC8B81A5275DFE910028651C /* BullseyeApp.swift in Sources */,
