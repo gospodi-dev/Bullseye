@@ -18,6 +18,7 @@
 		CC8B81AC275DFE920028651C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8B81AB275DFE920028651C /* Preview Assets.xcassets */; };
 		CC8D507F275FCAAB0029CED9 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D507E275FCAAB0029CED9 /* TextViews.swift */; };
 		CCDF717427624611004A5A51 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDF717327624611004A5A51 /* PointsView.swift */; };
+		CCDF717827626BD5004A5A51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDF717727626BD5004A5A51 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CC8B81AB275DFE920028651C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC8D507E275FCAAB0029CED9 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		CCDF717327624611004A5A51 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		CCDF717727626BD5004A5A51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CC00EF5B275E4D0E005BDD79 /* Game.swift */,
+				CCDF717727626BD5004A5A51 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				CC00EF5C275E4D0E005BDD79 /* Game.swift in Sources */,
 				CC8B81A5275DFE910028651C /* BullseyeApp.swift in Sources */,
 				CC705A9A2760F2A800FBC9FD /* RoundViews.swift in Sources */,
+				CCDF717827626BD5004A5A51 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
