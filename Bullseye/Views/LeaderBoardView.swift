@@ -30,6 +30,9 @@ struct RowView: View {
                 .strokeBorder(Color("LeaderboardRowColor"),
                               lineWidth: Constants.General.strokeWidth
             )
+                .padding(.leading)
+                .padding(.trailing)
+                .frame(maxWidth: 480.0)
         )
     }
 }
