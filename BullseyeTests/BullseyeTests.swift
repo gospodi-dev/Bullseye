@@ -2,7 +2,7 @@
 //  BullseyeTests.swift
 //  BullseyeTests
 //
-//  Created by Ray Wenderlich on 10/16/20.
+//  Created by Gospodi on 09.12.2021.
 //
 
 import XCTest
