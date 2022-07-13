@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct RoundImageViewStroked: View {
-    
+struct RoundedImageViewStroked: View {
     var systemName: String
     
     var body: some View {
@@ -17,13 +16,13 @@ struct RoundImageViewStroked: View {
             .foregroundColor(Color("TextColor"))
             .frame(width: Constants.General.roundedViewLength, height: Constants.General.roundedViewLength)
             .overlay(
-                Circle().strokeBorder(Color("ButtonStrokeColor"), lineWidth: Constants.General.strokeWidth)
+                Circle()
+                    .strokeBorder(Color("ButtonStrokeColor"), lineWidth: Constants.General.strokeWidth)
             )
     }
 }
 
-struct RoundImageViewFilled: View {
-    
+struct RoundedImageViewFilled: View {
     var systemName: String
     
     var body: some View {
@@ -38,9 +37,7 @@ struct RoundImageViewFilled: View {
     }
 }
 
-
 struct RoundRectTextView: View {
-    
     var text: String
     
     var body: some View {
@@ -67,18 +64,16 @@ struct RoundedTextView: View {
             .foregroundColor(Color("TextColor"))
             .frame(width: Constants.General.roundedViewLength, height: Constants.General.roundedViewLength)
             .overlay(
-                Circle().strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
-            )
-        
+                Circle()
+                    .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth))
     }
 }
 
 struct PreviewView: View {
-    
     var body: some View {
         VStack(spacing: 10) {
-        RoundImageViewStroked(systemName: "arrow.counterclockwise")
-        RoundImageViewFilled(systemName: "list.dash")
+            RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+            RoundedImageViewFilled(systemName: "list.dash")
             RoundRectTextView(text: "100")
             RoundedTextView(text: "1")
         }

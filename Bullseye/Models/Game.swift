@@ -13,7 +13,6 @@ struct LeaderboardEntry {
 }
 
 struct Game {
-    
     var target = Int.random(in: 1...100)
     var score = 0
     var round = 1
@@ -25,7 +24,7 @@ struct Game {
             leaderboardEntries.append(LeaderboardEntry(score: 80, date: Date()))
             leaderboardEntries.append(LeaderboardEntry(score: 200, date: Date()))
             leaderboardEntries.append(LeaderboardEntry(score: 50, date: Date()))
-            leaderboardEntries.append(LeaderboardEntry(score: 24, date: Date()))
+            leaderboardEntries.append(LeaderboardEntry(score: 20, date: Date()))
         }
     }
     
@@ -39,15 +38,12 @@ struct Game {
         } else {
             bonus = 0
         }
-        
         return 100 - difference + bonus
     }
     
     mutating func addToLeaderboard(point: Int) {
         leaderboardEntries.append(LeaderboardEntry(score: point, date: Date()))
-        leaderboardEntries.sort {
-            $0.score > $1.score
-        }
+        leaderboardEntries.sort { $0.score > $1.score }
     }
     
     mutating func startNewRound(points: Int) {
@@ -62,5 +58,6 @@ struct Game {
         round = 1
         target = Int.random(in: 1...100)
     }
+    
 }
 

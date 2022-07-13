@@ -12,12 +12,12 @@ struct InstructionText: View {
     
     var body: some View {
         Text(text.uppercased())
-                .bold()
-                .kerning(2.0)
-                .multilineTextAlignment(.center)
-                 .lineSpacing(4.0)
-                  .font(.footnote)
-                   .foregroundColor(Color("TextColor"))
+            .bold()
+            .kerning(2.0)
+            .multilineTextAlignment(.center)
+            .lineSpacing(4.0)
+            .font(.footnote)
+            .foregroundColor(Color("TextColor"))
     }
 }
 
@@ -26,10 +26,10 @@ struct BigNumberText: View {
     
     var body: some View {
         Text(text)
-                .kerning(-1.0)
-                .font(.largeTitle)
-                .fontWeight(.black)
-                .foregroundColor(Color("TextColor"))
+            .kerning(-1.0)
+            .font(.largeTitle)
+            .fontWeight(.black)
+            .foregroundColor(Color("TextColor"))
     }
 }
 
@@ -78,7 +78,7 @@ struct ButtonText: View {
             .frame(maxWidth: .infinity)
             .background(
                 Color.accentColor
-        )
+            )
             .foregroundColor(.white)
             .cornerRadius(12.0)
     }
@@ -96,7 +96,7 @@ struct ScoreText: View {
     }
 }
 
-struct DaterText: View {
+struct DateText: View {
     var date: Date
     
     var body: some View {
@@ -111,7 +111,6 @@ struct DaterText: View {
 struct BigBoldText: View {
     let text: String
     
-    
     var body: some View {
         Text(text.uppercased())
             .kerning(2.0)
@@ -121,20 +120,20 @@ struct BigBoldText: View {
     }
 }
 
-
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        VStack{
+        VStack {
             InstructionText(text: "Instructions")
             BigNumberText(text: "999")
             SliderLabelText(text: "99")
             LabelText(text: "9")
-            BodyText(text: "You score 200 Points\n🎉🎉🎉")
+            BodyText(text: "You scored 200 Points\n🎉🎉🎉")
             ButtonText(text: "Start New Round")
-            ScoreText(score: 456)
-            DaterText(date: Date())
+            ScoreText(score: 459)
+            DateText(date: Date())
             BigBoldText(text: "Leaderboard")
         }
         .padding()
     }
 }
+
